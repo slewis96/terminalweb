@@ -349,7 +349,7 @@ function commandHandler(command, cmdline = true) {
       addLine("[3s/]*Kubernetes[1s/]*Terraform[1s/]*Helm");
       addLine("[3s/]*Ansible[4s/]*Istio[5s/]*ARM");
       addLine("[3s/]*Istio[6s/]*Bash[6s/]*PowerShell");
-      addLine("[3s/]*Grafana[4s/]*Promometheus");
+      addLine("[3s/]*Grafana[4s/]*Kiali[5s/]*Prometheus");
       addLine("[cg]DevOps skills[/cg]");
       addLine("[3s/]*CI/CD Builds[9s/]*Repository Mangement");
       addLine("[3s/]*Branching Strategies[1s/]*Automation Testing");
