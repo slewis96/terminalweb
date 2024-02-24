@@ -4,7 +4,7 @@
 const TEXT_OFFSET = 0;
 const CHAR_SIZE = 9.594;
 
-const version = "v1.1.0";
+const version = "v1.1.2";
 var reader = new FileReader();
 // 20 chars
 // 191.5px
@@ -529,6 +529,9 @@ function commandHandler(command, cmdline = true) {
       break;
     case "changelog":
       addLine("Changelog:");
+      addLine("[2s/]v1.1.2:");
+      addLine("[4s/]Fixed formatting and icon");
+      addLine("[n/]");
       addLine("[2s/]v1.1.0:");
       addLine("[4s/]Finalised content updates");
       addLine("[n/]");
