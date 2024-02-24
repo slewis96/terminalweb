@@ -4,7 +4,7 @@
 const TEXT_OFFSET = 0;
 const CHAR_SIZE = 9.594;
 
-const version = "v1.1.2";
+const version = "v1.1.3";
 var reader = new FileReader();
 // 20 chars
 // 191.5px
@@ -524,11 +524,14 @@ function commandHandler(command, cmdline = true) {
         "[n/]Also if you'd like to visit my old website (circa 2018), when I thought it'd be good try from scratch &#128517;, see here - "
       );
       addLine(
-        "[clb][link-https://slewis96.github.io/]slewis96.github.io[/link][/clb][n/][n/]"
+        "[clb][link-https://old.sebastianlewis.io/]old.sebastianlewis.io[/link][/clb][n/][n/]"
       );
       break;
     case "changelog":
       addLine("Changelog:");
+      addLine("[2s/]v1.1.3:");
+      addLine("[4s/]URL fixes");
+      addLine("[n/]");
       addLine("[2s/]v1.1.2:");
       addLine("[4s/]Fixed formatting and icon");
       addLine("[n/]");
