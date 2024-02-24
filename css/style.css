@@ -197,7 +197,9 @@ pre {
   color:#fff;
 }
 .text{
+  font-size: 12px;
   text-align: center;
+  padding: 25px;
 }
 
 .heading{
