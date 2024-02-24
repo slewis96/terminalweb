@@ -242,7 +242,6 @@ input.addEventListener("input", (event) => {
   }
 });
 
-refocus();
 
 clearOutput();
 

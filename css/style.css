@@ -199,7 +199,9 @@ pre {
 .text{
   font-size: 16px;
   text-align: center;
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
 }
 @media all and (max-width: 750px) {
   .text{
