@@ -197,11 +197,17 @@ pre {
   color:#fff;
 }
 .text{
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
-  padding: 25px;
+  padding: 40px;
 }
-
+@media all and (max-width: 750px) {
+  .text{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+  }
+}
 .heading{
   text-align: center;
 }
