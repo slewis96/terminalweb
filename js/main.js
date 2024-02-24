@@ -4,7 +4,7 @@
 const TEXT_OFFSET = 0;
 const CHAR_SIZE = 9.594;
 
-const version = "v1.2.0";
+const version = "v1.2.1";
 var reader = new FileReader();
 // 20 chars
 // 191.5px
@@ -528,6 +528,9 @@ function commandHandler(command, cmdline = true) {
       break;
     case "changelog":
       addLine("Changelog:");
+      addLine("[2s/]v1.2.1:");
+      addLine("[4s/]1 character spelling fix - HUGE CHANGE");
+      addLine("[n/]");
       addLine("[2s/]v1.2.0:");
       addLine("[4s/]Various formatting changes to support mobile and desktop");
       addLine("[n/]");
