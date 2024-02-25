@@ -35,8 +35,6 @@ let availableCommands = [
   "work TechnicalConsultant",
   "work ComputerVolunteer",
   "skills",
-  "monkey",
-  "easteregg",
   "education",
   "contact",
   "all",
