@@ -28,6 +28,7 @@ let availableCommands = [
   "repo",
   "changelog",
   "work",
+  "work LeadSiteReliabilityEngineer",
   "work LeadPlatformEngineer",
   "work SeniorDevOpsEngineer",
   "work PlatformEngineer",
@@ -186,7 +187,7 @@ function addCommandLine() {
   );
 }
 function openCv() {
-  window.open('files/SebastianLewisCV2024.pdf', "_blank").focus();
+  window.open('files/SebastianLewisCV2026.pdf', "_blank").focus();
 }
 function workHelpCommand(cmd, desc) {
   addLine(`[clb][click2-work-${cmd}]${cmd}[/click][/clb][n/][3s/]${desc}`);
@@ -341,59 +342,120 @@ function commandHandler(command, cmdline = true) {
       );
     break;
     case "skills":
-      addLine("[cg]Cloud Providers Worked with[/cg]");
-      addLine("[3s/]*Azure[1s/]*GCP");
-      addLine("[cg]Infrastructure Skills[/cg]");
-      addLine("[3s/]*Kubernetes[1s/]*Terraform[1s/]*Helm");
-      addLine("[3s/]*Ansible[4s/]*Istio[5s/]*ARM");
-      addLine("[3s/]*Istio[6s/]*Bash[6s/]*PowerShell");
-      addLine("[3s/]*Grafana[4s/]*Kiali[5s/]*Prometheus");
-      addLine("[cg]DevOps skills[/cg]");
-      addLine("[3s/]*CI/CD Builds[9s/]*Repository Mangement");
-      addLine("[3s/]*Branching Strategies[1s/]*Automation Testing");
-      addLine("[3s/]*Migrations[11s/]*Training");
-      addLine("[cg]DevOps Tools[/cg]");
-      addLine("[3s/]*Azure DevOps[1s/]*GitHub");
-      addLine("[3s/]*MSTeams[6s/]*Slack");
-      addLine("[3s/]*Concourse[4s/]*Jenkins");
-      addLine("[cg]Programming Languages[/cg]");
-      addLine("[3s/]*.NET[1s/]*Java");
-      addLine("[3s/]*Ruby[1s/]*Haskell");
-      addLine("[cg]Knowledgable in[/cg]");
-      addLine("[3s/]*Networking[1s/]*SQL");
-      addLine("[3s/]*APIs[6s/][1s/]*Disaster Recovery");
-      addLine("[3s/]*Security[3s/]*Obeservability");
-      addLine("[cg]Web Languages[/cg]");
-      addLine("[3s/]*React[1s/]*Javascript[1s/]*HTML[1s/]*CSS");
-      addLine("[cg]OS Used[/cg]");
-      addLine("[3s/]*Mac[1s/]*Linux[1s/]*Windows");
+      addLine("[cg]Cloud & Platform[/cg]");
+      addLine("[3s/]*Azure[1s/]*AWS[1s/]*GCP");
+      addLine("[3s/]*Kubernetes[1s/]*AKS[1s/]*Docker");
+      addLine("[3s/]*Terraform[1s/]*Helm[1s/]*Ansible");
+      addLine("[3s/]*Istio[1s/]*ARM[1s/]*Crossplane");
+
+      addLine("[cg]SRE & Reliability[/cg]");
+      addLine("[3s/]*SLIs/SLOs[1s/]*Error Budgets");
+      addLine("[3s/]*Incident Response[1s/]*Postmortems/RCA");
+      addLine("[3s/]*Disaster Recovery[1s/]*Capacity Planning");
+      addLine("[3s/]*High Availability[1s/]*Toil Reduction");
+
+      addLine("[cg]Observability & Data[/cg]");
+      addLine("[3s/]*Grafana[1s/]*Prometheus[1s/]*InfluxDB");
+      addLine("[3s/]*Coralogix[1s/]*Sentry[1s/]*AppInsights");
+      addLine("[3s/]*Lightstep[1s/]*Distributed Tracing");
+      addLine("[3s/]*Kafka[1s/]*Redis[1s/]*Log-to-Metric Pipelines");
+
+      addLine("[cg]CI/CD & Automation[/cg]");
+      addLine("[3s/]*Azure DevOps[1s/]*GitHub Actions[1s/]*GitHub");
+      addLine("[3s/]*Jenkins[1s/]*Concourse[1s/]*Airflow");
+      addLine("[3s/]*Automated Testing[1s/]*Dependency Management");
+      addLine("[3s/]*Release Automation[1s/]*AI-assisted Engineering");
+
+      addLine("[cg]Software Engineering[/cg]");
+      addLine("[3s/]*Python[1s/]*Node.js[1s/]*JavaScript");
+      addLine("[3s/]*React[1s/]*Bash[1s/]*PowerShell");
+      addLine("[3s/]*SQL[1s/]*APIs[1s/]*Networking");
+      addLine("[3s/]*ETL[1s/]*Celery/RQ");
+
+      addLine("[cg]Leadership & Delivery[/cg]");
+      addLine("[3s/]*Platform Strategy[1s/]*Technical Leadership");
+      addLine("[3s/]*Stakeholder Management[1s/]*Team Leadership");
+      addLine("[3s/]*Mentoring[1s/]*Engineering Standards");
+      addLine("[3s/]*Platform Modernisation[1s/]*Cost Optimisation");
+
+      addLine("[cg]AI Tooling[/cg]");
+      addLine("[3s/]*Claude[1s/]*GitHub Copilot[1s/]*Speckit");
     break;
     case "work":
-      workHelpCommand("LeadPlatformEngineer", "July 2023 - present @ Insurwave Ltd - London[n/][3s/][cg]Top Skills:[/cg] Management, Azure, Terraform");
-      workHelpCommand("SeniorDevOpsEngineer", "Feb 2023 - July 2023 @ JustEat Takeaway.com - London[n/][3s/][cg]Top Skills:[/cg] GitHubActions, GCP, Airflow");
-      workHelpCommand("PlatformEngineer", "Feb 2021 - Jan 2023 @ Insurwave Ltd - London[n/][3s/][cg]Top Skills:[/cg] Azure, Ansible, Kubernetes");
-      workHelpCommand("DevOpsEngineer", "Aug 2018 - Feb 2021 @ iPSL – Intelligent Processing Solutions Ltd - Northampton[n/][3s/][cg]Top Skills:[/cg] AzureDevops, Powershell, Training");
-      workHelpCommand("TechnicalConsultant", "May 2018 - July 2020 @ Sparta Global - Northampton");
-      workHelpCommand("ComputerVolunteer", "Feb 2018 - May 2018 @ Northfield Community Partnership - Birmingham");
+      workHelpCommand(
+        "LeadSiteReliabilityEngineer",
+        "June 2025 - present @ FactSet - London[n/][3s/][cg]Top Skills:[/cg] SRE, Error Budgets, Incident Response"
+      );
+      workHelpCommand(
+        "LeadPlatformEngineer",
+        "July 2023 - June 2025 @ Insurwave Ltd - London[n/][3s/][cg]Top Skills:[/cg] Team Leadership, Azure, Terraform"
+      );
+      workHelpCommand(
+        "SeniorDevOpsEngineer",
+        "Feb 2023 - July 2023 @ JustEat Takeaway.com - London[n/][3s/][cg]Top Skills:[/cg] GitHub Actions, GCP, Airflow"
+      );
+      workHelpCommand(
+        "PlatformEngineer",
+        "Feb 2021 - Jan 2023 @ Insurwave Ltd - London[n/][3s/][cg]Top Skills:[/cg] Azure, AKS, Terraform"
+      );
+      workHelpCommand(
+        "DevOpsEngineer",
+        "Aug 2018 - Feb 2021 @ iPSL - Northampton[n/][3s/][cg]Top Skills:[/cg] Azure DevOps, PowerShell, Training"
+      );
+      workHelpCommand(
+        "TechnicalConsultant",
+        "May 2018 - July 2020 @ Sparta Global - Northampton[n/][3s/][cg]Top Skills:[/cg] DevOps, SDET, Consulting"
+      );
+    break;
+    case "work leadsitereliabilityengineer":
+      addLine("[n/]");
+      addLine("{");
+      addLine("[3s/]roleId: LeadSiteReliabilityEngineer");
+      addLine("[3s/]company: FactSet");
+      addLine("[3s/]startDate: June 2025");
+      addLine("[3s/]endDate: null");
+      addLine("[3s/]status: currentEmployer");
+      addLine("[3s/]location: London");
+      addLine("}");
+      addLine("[n/]");
+      addLine(
+        "I currently work as a Lead Site Reliability Engineer / Principal Software Engineer at FactSet, a global financial data and software company. My role sits within Platform Infrastructure Engineering and combines reliability engagements with SRE Core ownership of reliability tooling, incident management systems, error budget platforms, observability pipelines and legacy enterprise failover tooling.[n/][n/]"
+      );
+      addLine("Key areas of focus include:[n/][n/]");
+      addLine("● Helping teams instrument complex systems and adopt SLIs/SLOs, error budgets, postmortems and better alerting");
+      addLine("● Supporting a major SRE engagement with a business-critical trading, execution and order management platform");
+      addLine("● Creating approximately 20 SLIs/SLOs covering end-to-end client experience");
+      addLine("● Improving Error Budgets and SLI tooling covering 1,000+ services and around 10 TB of logs/metrics per day");
+      addLine("● Modernising Python, Ubuntu and Redis-backed SRE services with no downtime");
+      addLine("● Supporting critical incident response, RCA and postmortem action planning");
+      addLine("● Developing capacity-planning tooling using predictive modelling, alerting integrations and Kubernetes/Crossplane migration work");
+      addLine("[n/]");
+      addLine(
+        "[cy]For more details:[/cy] Use the [clb][click-cv]cv[/click][/clb] command to open my cv with further info"
+      );
+      addLine("[n/][n/]");
     break;
     case "work leadplatformengineer":
       addLine("[n/]");
       addLine("{");
-      addLine("[3s/]roleId: LeadPlatformEngineer ");
-      addLine("[3s/]company: Insurwave Ltd ");
-      addLine("[3s/]startDate: July 2023")
-      addLine("[3s/]endDate: null")
-      addLine("[3s/]status: currentEmployer")
-      addLine("[3s/]location: London")
+      addLine("[3s/]roleId: LeadPlatformEngineer");
+      addLine("[3s/]company: Insurwave Ltd");
+      addLine("[3s/]startDate: July 2023");
+      addLine("[3s/]endDate: June 2025");
+      addLine("[3s/]status: previousEmployer");
+      addLine("[3s/]location: London");
       addLine("}");
       addLine("[n/]");
-      addLine("I currently work for Insurwave, having previously spent 2 years there. My responsibilities currently cover managing a team of 4 platform engineers and leading them to provide benefits to the organisation in all aspects of the platform. Since taking the team's helm, I have instilled values of sustainability, observability, and thinking big. Currently, this has led me (and the team) to the following achievements:[n/][n/]")
-      addLine("● Brought cohesion, structure, and guidance to the team")
-      addLine("● Terraform - Defined and guided new procedures for the team")
-      addLine("● Standardisation of a AI platform with a 70% cost saving and 90% reduction in deployment time")
-      addLine("● Reduced Disaster Recovery time to under 3 hours")
-      addLine("● On-the-fly environment creation")
-      addLine("● Migration of FrontEnd service from Kubernetes to CDN with 0 downtime")
+      addLine(
+        "I worked as Lead Platform Engineer at Insurwave, a SaaS platform modernising speciality insurance by connecting insurers, brokers and major shipping clients. My role focused on managing a team of 4 platform engineers, improving team structure and delivery, and leading platform improvements across Terraform, Azure, disaster recovery, observability and deployment automation.[n/][n/]"
+      );
+      addLine("Key achievements included:[n/][n/]");
+      addLine("● Managed and led a team of 4 platform engineers, reintroducing structure, ceremonies and prioritisation");
+      addLine("● Defined new Terraform and platform-engineering standards");
+      addLine("● Standardised deployment of a new AI platform within 6 weeks");
+      addLine("● Reduced infrastructure cost by 70% and new environment deployment time by 90%, from 48 hours to 3 hours");
+      addLine("● Reduced disaster recovery time to under 3 hours and enabled on-the-fly environment creation");
+      addLine("● Migrated frontend services from Kubernetes to CDN with zero downtime");
       addLine("[n/]");
       addLine(
         "[cy]For more details:[/cy] Use the [clb][click-cv]cv[/click][/clb] command to open my cv with further info"
